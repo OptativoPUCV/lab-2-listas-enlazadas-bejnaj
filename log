@@ -192,3 +192,14 @@ Wed, Mar 26, 2025  9:52:38 AM:
  1 file changed, 2 insertions(+)
  tests:  0|0
 82621e7
+Wed, Mar 26, 2025  9:53:52 AM: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'nextList':
+list.c:49:29: error: 'list->current' is a pointer; did you mean to use '->'?
+         return list->current.data;
+                             ^
+                             ->
+Compilation failed
+dbc63e6
