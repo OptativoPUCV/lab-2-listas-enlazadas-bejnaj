@@ -42,7 +42,7 @@ void * firstList(List * list) {
 }
 
 void * nextList(List * list) {
-    return NULL;
+    list->current = list->current->next;
 }
 
 void * lastList(List * list) {
@@ -54,6 +54,7 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
+
 }
 
 void pushBack(List * list, void * data) {
@@ -62,6 +63,10 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
+    Node *nodoActual = createNode(data)
+    list->current->next = nodoActual;
+    nodoActual->prev = list->current;
+    nextList(list);
 }
 
 void * popFront(List * list) {
