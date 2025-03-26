@@ -156,3 +156,16 @@ Wed, Mar 26, 2025  9:41:25 AM:
  tests:  1|5
 total_score: 10/70
 6e5432a
+Wed, Mar 26, 2025  9:43:18 AM: 
+ list.c | 15 +++++++++++----
+ 1 file changed, 11 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'pushFront':
+list.c:65:11: error: redefinition of 'nodoActual'
+     Node *nodoActual = createNode(data);
+           ^~~~~~~~~~
+list.c:60:11: note: previous definition of 'nodoActual' was here
+     Node *nodoActual = createNode(data);
+           ^~~~~~~~~~
+Compilation failed
+52f03cf
