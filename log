@@ -182,3 +182,8 @@ list.c:60:11: note: previous definition of 'nodoActual' was here
            ^~~~~~~~~~
 Compilation failed
 753c49e
+Wed, Mar 26, 2025  9:49:43 AM: 
+ list.c | 7 -------
+ 1 file changed, 7 deletions(-)
+ tests:  0|0
+37853ee
