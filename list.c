@@ -91,8 +91,10 @@ void pushCurrent(List * list, void * data) {
         Node *aux = list->current->next;
         list->current->next = nodoActual;
         nodoActual->prev = list->current;
-        if(aux != NULL)
+        if(aux != NULL){
             aux->prev = nodoActual;
+            nodoActual->next = aux;
+        }
     }
 }
 
