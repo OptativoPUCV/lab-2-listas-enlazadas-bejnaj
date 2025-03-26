@@ -131,3 +131,16 @@ Wed, Mar 26, 2025  9:36:24 AM:
  1 file changed, 4 insertions(+)
  tests:  0|0
 d03196d
+Wed, Mar 26, 2025  9:39:08 AM: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'pushFront':
+list.c:61:9: error: called object 'list' is not a function or function pointer
+     if (list(list->head)){
+         ^~~~
+list.c:59:23: note: declared here
+ void pushFront(List * list, void * data) {
+                       ^~~~
+Compilation failed
+66cb2ad
