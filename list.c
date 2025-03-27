@@ -138,7 +138,7 @@ void * popCurrent(List * list) {
         return popFront(list);
     }
     else if (list->current == list->tail){
-        list->current = list->head->prev;
+        list->current = list->tail->prev;
         return popBack(list);
     }
     else {
