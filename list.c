@@ -120,7 +120,7 @@ void * popFront(List * list) {
 
 void * popBack(List * list) {
     list->current = list->tail;
-    void * dato = list->head->data;
+    void * dato = list->tail->data;
     list->tail = list->tail->prev;
 
     if (list->tail != NULL) {
