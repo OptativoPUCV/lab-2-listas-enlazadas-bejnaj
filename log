@@ -343,3 +343,14 @@ Thu, Mar 27, 2025 12:33:54 AM:
  tests:  11|1
 total_score: 55/70
 f2cb6e1
+Thu, Mar 27, 2025 12:45:58 AM: 
+ list.c | 13 +++++++++----
+ 1 file changed, 9 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function 'popCurrent':
+list.c:129:1: error: control reaches end of non-void function [-Werror=return-type]
+  129 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+71c8c41
