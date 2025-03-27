@@ -98,6 +98,7 @@ void pushCurrent(List * list, void * data) {
             aux->prev = nodoActual;
             nodoActual->next = aux;
         }
+        else list->tail = nodoActual;
     }
 }
 
