@@ -466,3 +466,27 @@ Thu, Mar 27, 2025  1:11:59 AM:
  tests:  12|0
 total_score: 70/70
 26d08ab
+Thu, Mar 27, 2025  1:12:23 AM: 
+ list.c | 14 +-------------
+ 1 file changed, 1 insertion(+), 13 deletions(-)
+In file included from test.c:5:
+list.c: In function 'popBack':
+list.c:118:35: error: 'n' undeclared (first use in this function)
+  118 |     list->tail = list->tail->prev;n
+      |                                   ^
+list.c:118:35: note: each undeclared identifier is reported only once for each function it appears in
+list.c:118:36: error: expected ';' before 'return'
+  118 |     list->tail = list->tail->prev;n
+      |                                    ^
+      |                                    ;
+  119 |     return dato;
+      |     ~~~~~~                          
+list.c:117:12: error: unused variable 'dato' [-Werror=unused-variable]
+  117 |     void * dato = list->tail->data;
+      |            ^~~~
+list.c:120:1: error: control reaches end of non-void function [-Werror=return-type]
+  120 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2ee2d50
