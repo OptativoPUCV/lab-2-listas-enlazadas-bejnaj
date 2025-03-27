@@ -116,7 +116,7 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    int dato = list->current->data;
+    void *dato = list->current->data;
     if (list->current == list->head)
          popFront(list);
     else if (list->current == list->tail)
