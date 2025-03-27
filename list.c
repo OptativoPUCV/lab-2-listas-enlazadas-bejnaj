@@ -116,8 +116,9 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+    int dato = list->current->data;
     if (list->current == list->head)
-        return popFront(list);
+         popFront(list);
     else if (list->current == list->tail)
         return popBack(list);
     else {
@@ -126,7 +127,7 @@ void * popCurrent(List * list) {
         anterior->next = siguiente;
         siguiente->prev = anterior;
         list->current = siguiente;
-        return list->current;
+        return dato;
     }
 }
 

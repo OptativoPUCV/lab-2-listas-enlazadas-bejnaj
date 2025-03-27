@@ -359,3 +359,20 @@ Thu, Mar 27, 2025 12:48:25 AM:
  1 file changed, 4 insertions(+), 2 deletions(-)
  tests:  0|0
 386cd2a
+Thu, Mar 27, 2025 12:50:33 AM: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function 'popCurrent':
+list.c:119:16: error: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  119 |     int dato = list->current->data;
+      |                ^~~~
+list.c:130:16: error: returning 'int' from a function with return type 'void *' makes pointer from integer without a cast [-Wint-conversion]
+  130 |         return dato;
+      |                ^~~~
+list.c:132:1: error: control reaches end of non-void function [-Werror=return-type]
+  132 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+22f93fc
