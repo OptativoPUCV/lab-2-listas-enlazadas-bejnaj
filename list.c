@@ -117,14 +117,16 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
     if (list->current == list->head)
-        popFront(list);
+        return popFront(list);
     else if (list->current == list->tail)
-        popBack(list);
+        return popBack(list);
     else {
         Node *anterior = list->current->prev;
         Node *siguiente = list->current->next;
         anterior->next = siguiente;
         siguiente->prev = anterior;
+        list->current = siguiente;
+        return list->current;
     }
 }
 
