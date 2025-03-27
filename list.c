@@ -74,7 +74,10 @@ void pushFront(List * list, void * data) {
         nodoActual->next = list->head;
         list->head = nodoActual;
     }
-    else list->head = nodoActual;
+    else {
+        list->head = nodoActual;
+        list->tail = nodoActual;
+    }
 }
 
 void pushBack(List * list, void * data) {
