@@ -425,3 +425,14 @@ list.c:149:6: error: 'cleanList' defined but not used [-Werror=unused-function]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9286b95
+Thu, Mar 27, 2025  1:04:49 AM: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function 'popFront':
+list.c:119:1: error: control reaches end of non-void function [-Werror=return-type]
+  119 | }
+      | ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7b37ca9

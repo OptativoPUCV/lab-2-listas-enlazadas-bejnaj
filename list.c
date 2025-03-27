@@ -115,6 +115,7 @@ void * popFront(List * list) {
     else {
         list->tail = NULL;
     return dato;
+    }
 }
 
 void * popBack(List * list) {
